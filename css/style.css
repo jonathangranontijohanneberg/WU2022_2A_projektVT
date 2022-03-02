@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#wrapper_index{
+    /* background-color: bisque; */
+
+    display: grid;
+    height: 100%;
+    width: 100%;
+    /* 400px; */
+    gap: 8px;
+    grid-template-columns: 1fr 6fr 1fr;
+    /* grid-template-rows: 175px 2fr 1fr 1fr 150px; */
+    grid-template-rows: 175px 300px 1.5fr 400px 400px 400px 150px;
+
+    grid-template-areas: 
+    /* "he he he"
+    "ts ts ts"
+    "ws ws ws"
+    "a1 a2 a3"
+    "fo fo fo" */
+    "he he he"
+    "ts ts ts"
+    "ws ws ws"
+    ".  a1 . "
+    ".  a2 . "
+    ".  a3 . "
+    "fo fo fo"
+    ;
+    
+}
+
+header{
+    background: red;
+    grid-area: he;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#trailer_section{
+    background: blue;
+    grid-area: ts;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#welcome_section{
+    background: pink;
+    grid-area: ws;
+    display: flex;
+    align-items: space-evenly;
+    justify-content: space-evenly;
+}
+#welcome_text{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    /* align-items: space-evenly;
+    justify-content: space-evenly; */
+    /* flex-wrap: wrap; */
+}
+
+.advertisement_img{
+    width: 250px;
+    height: auto;
+}
+
+#logo_img{
+    width: 300px;
+    height: auto;
+}
+
+.advertisement{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#advertisement_1{
+    background-color: aquamarine;
+    grid-area: a1;
+}
+
+#advertisement_2{
+    background-color: khaki;
+    grid-area: a2;
+}
+
+#advertisement_3{
+    background-color: forestgreen;
+    grid-area: a3;
+}
+
+footer{
+    display: flex;
+    background: saddlebrown;
+    grid-area: fo;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer_link_list{
+    background: green;
+    display: flex;
+    flex-direction: column;
+    /* height: 75px;
+    width: 40px; */
+    align-items: center;
+    font-size: 0.9rem;
+    /* margin: 10px; */
+}
+
+
+
+.footer_list_item{
+    margin: 5px;
+}
+
+h2{
+    font-size: 0.9rem;
+}
+
+li {
+    list-style: none;
+    text-decoration: none;
+    /* font-size: 0.5rem; */
+}
+
+a {
+    list-style: none;
+    text-decoration: none;
+}

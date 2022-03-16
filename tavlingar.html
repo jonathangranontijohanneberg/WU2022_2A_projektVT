@@ -10,29 +10,25 @@
 <body>
     <div id="wrapper_tavlingar">
 
-
         <header>
             <a href="index.html">
-                <img src="" alt="">
-                <!-- LOGGAN (Hemsidans namn är del av loggan)-->
+                <img src="img/logo_test.jpg" alt="logo" id="logo_img">
             </a>
-            <!-- <nav id="nav_header">
-                <ul id="link_list">
-                    <li>
-                        <a href="index.html">Hem</a>
-                    </li>
-                    <li>
-                        <a href="bli_medlem.html">Bli Medlem</a>
-                    </li>
-                    <li>
-                        <a href="tavlingar.html">Tävlingar</a>
-                    </li>
-                    <li>
-                        <a href="resultat.html">Resultat</a>
-                    </li>
+            <nav>
+                <ul id="nav_links">
+                    <li><a href="index.html">Hem</a></li>
+                    <li><a href="bli_medlem.html">Bli Medlem</a></li>
+                    <li><a href="tavlingar.html">Tävlingar</a></li>
+                    <li><a href="resultat.html">Resultat</a></li>
                 </ul>
-            </nav> -->
+                <div id="burger">
+                    <div id="line_1" class="burger_line"></div>
+                    <div id="line_2" class="burger_line"></div>
+                    <div id="line_3" class="burger_line"></div>
+                </div>
+            </nav>
         </header>
+
 
         <nav>
             <ul id="nav-links">
@@ -48,55 +44,65 @@
             </div>
         </nav>
 
-        <section class="contests">
-            <h3 class="contest_name">Tävling 1</h3>
-            <p class="contest_description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates assumenda repellendus atque autem dolorum ipsa vitae at, neque aut deserunt.</p>
+        <h3 class="contest_name" id="contest_name1">Tävling 1</h3>
+        <section class="contest_descriptions" id="contest1_description">
+            <p class="contest_description_text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates assumenda repellendus atque autem dolorum ipsa vitae at, neque aut deserunt.</p>
+        </section>
+
+        <section class="contest_details" id="contest1_details">
             <h4>DEADLINE</h4>
             <p class="deadline_date">1/4</p>
             <button><p>SKICKA IN</p></button>
         </section>
 
-        <section class="contests">
-            <h3 class="contest_name">Tävling 2</h3>
-            <p class="contest_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi deleniti, commodi ab quia tempore, error alias ad ullam possimus esse nisi, incidunt accusantium pariatur saepe voluptatem quibusdam quas placeat aliquid.</p>
+
+        <h3 class="contest_name" id="contest_name2">Tävling 2</h3>
+        <section class="contest_descriptions" id="contest2_description">
+            <p class="contest_description_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi deleniti, commodi ab quia tempore, error alias ad ullam possimus esse nisi, incidunt accusantium pariatur saepe voluptatem quibusdam quas placeat aliquid.</p>
+        </section>
+
+        <section class="contest_details" id="contest2_details">
             <h4>DEADLINE</h4>
             <p class="deadline_date">13/4</p>
             <button><p>SKICKA IN</p></button>
         </section>
 
-        <section class="contests">
-            <h3 class="contest_name">Tävling 3</h3>
-            <p class="contest_description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam iusto voluptates porro labore.</p>
+        <h3 class="contest_name" id="contest_name3">Tävling 3</h3>
+        <section class="contest_descriptions" id="contest3_description">
+            <p class="contest_description_text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam iusto voluptates porro labore.</p>
+        </section>
+
+        <section class="contest_details" id="contest3_details">
             <h4>DEADLINE</h4>
             <p class="deadline_date">12/5</p>
             <button><p>SKICKA IN</p></button>
         </section>
 
+
         <footer>
-            <ul>
-                <li><h2>Om Klubben</h2></li>
-                <li><a href="#">Medlemmar</a></li>
-                <li><a href="#">Ordningsregler</a></li>
-                <li><a href="#">Bli Medlem</a></li>
+            <ul class="footer_link_list">
+                <li class="footer_list_item"><h2>Om Klubben</h2></li>
+                <li class="footer_list_item"><a href="#">Medlemmar</a></li>
+                <li class="footer_list_item"><a href="#">Ordningsregler</a></li>
+                <li class="footer_list_item"><a href="#">Bli Medlem</a></li>
             </ul>
 
-            <ul>
-                <li><h2>Kontakta Oss</h2></li>
-                <li><a href="#">Discord</a></li>
-                <li><a href="#">Instagram</a></li>
-                <li><a href="#">Email</a></li>
+            <ul class="footer_link_list">
+                <li class="footer_list_item"><h2>Kontakta Oss</h2></li>
+                <li class="footer_list_item"><a href="#">Discord</a></li>
+                <li class="footer_list_item"><a href="#">Instagram</a></li>
+                <li class="footer_list_item"><a href="#">Email</a></li>
             </ul>
 
-            <ul>
-                <li><h2>Om Tävlingarna</h2></li>
-                <li><a href="#">Regler</a></li>
-                <li><a href="#">Deadlines</a></li>
-                <li><a href="#">Skicka In</a></li>
+            <ul class="footer_link_list">
+                <li class="footer_list_item"><h2>Om Tävlingarna</h2></li>
+                <li class="footer_list_item"><a href="#">Regler</a></li>
+                <li class="footer_list_item"><a href="#">Deadlines</a></li>
+                <li class="footer_list_item"><a href="#">Skicka In</a></li>
             </ul>
         </footer>
 
-
     </div>
-    
+    <script src="js/script.js"></script>    
 </body>
 </html>

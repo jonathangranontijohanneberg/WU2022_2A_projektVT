@@ -104,7 +104,6 @@ nav{
 #burger {
     /* margin-right: 87.5px; */
     cursor: pointer;
-
 }
 
 #trailer_section{
@@ -142,6 +141,11 @@ nav{
     height: auto;
 }
 
+h3{
+    margin-bottom: 7px;
+    font-size: 2rem;
+}
+
 .advertisement{
     display: flex;
     align-items: center;
@@ -176,6 +180,157 @@ nav{
     margin-right: 30px;
 }
 
+
+#wrapper_bli_medlem{
+    /* background-color: bisque; */
+
+    display: grid;
+    height: 100%;
+    width: 100%;
+    /* 400px; */
+    gap: 8px;
+    /* display: flex;
+    flex-direction: column; */
+    grid-template-columns: 4fr 1fr;
+    /* grid-template-rows: 175px 2fr 1fr 1fr 150px; */
+    grid-template-rows: 175px 7rem 5rem 5rem 5rem 7rem 150px;
+
+    grid-template-areas: 
+    "he he he"
+    "h1 h1 h1"
+    "b1 b1 . "
+    "b2 b2 . "
+    "b3 b3 . "
+    "sk .  . "
+    "fo fo fo"
+    ;
+    
+}
+
+h1{
+    background: red;
+    grid-area: h1;
+    display: flex;
+    font-size: 3rem;
+    justify-content: center;
+    align-items: center;
+}
+
+#bli_medlem_secion1{
+    background: floralwhite;
+    grid-area: b1;
+}
+
+#bli_medlem_secion2{
+    background: rgb(105, 82, 35);
+    grid-area: b2;
+}
+
+#bli_medlem_secion3{
+    background: lawngreen;
+    grid-area: b3;
+}
+
+#skickat_button{
+    grid-area: sk;
+    background: firebrick;
+    display: flex;
+    padding: 10px;
+}
+
+button{
+    width: 6rem;
+    height: 3rem;
+    font-size: 1.25rem;
+}
+
+
+input{
+    width: 18rem;
+    height: 2.75rem;
+    font-size: 1rem;
+}
+
+.bli_medlem_sections{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+
+}
+
+#wrapper_tavlingar{
+    /* background-color: bisque; */
+
+    display: grid;
+    height: 100%;
+    width: 100%;
+    /* 400px; */
+    gap: 8px;
+    /* display: flex;
+    flex-direction: column; */
+    grid-template-columns: 1fr 1fr;
+    /* grid-template-rows: 175px 2fr 1fr 1fr 150px; */
+    grid-template-rows: 175px 3rem 1fr 3rem 1fr 3rem 1fr 150px;
+
+    grid-template-areas: 
+    "he he"
+    "n1 n1"
+    "c1 d1"
+    "n2 n2"
+    "d2 c2"
+    "n3 n3"
+    "c3 d3"
+    "fo fo"
+    ;
+    
+}
+
+#contest_name1{
+    background: greenyellow;
+    grid-area: n1;
+}
+
+#contest1_details{
+    background: hotpink;
+    grid-area: c1;
+}
+
+#contest1_description{
+    background: khaki;
+    grid-area: d1;
+}
+
+#contest_name2{
+    background: sandybrown;
+    grid-area: n2;
+}
+
+
+#contest2_details{
+    background: rebeccapurple;
+    grid-area: c2;
+}
+
+#contest2_description{
+    background: khaki;
+    grid-area: d2;
+}
+
+#contest_name3{
+    background: salmon;
+    grid-area: n3;
+}
+
+
+#contest3_details{
+    background: honeydew;
+    grid-area: c3;
+}
+
+#contest3_description{
+    background: khaki;
+    grid-area: d3;
+}
 
 footer{
     display: flex;

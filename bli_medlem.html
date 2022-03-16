@@ -16,82 +16,64 @@
 
         <header>
             <a href="index.html">
-                <img src="" alt="">
-                <!-- LOGGAN (Hemsidans namn är del av loggan)-->
+                <img src="img/logo_test.jpg" alt="logo" id="logo_img">
             </a>
-            <!-- <nav id="nav_header">
-                <ul id="link_list">
-                    <li>
-                        <a href="index.html">Hem</a>
-                    </li>
-                    <li>
-                        <a href="bli_medlem.html">Bli Medlem</a>
-                    </li>
-                    <li>
-                        <a href="tavlingar.html">Tävlingar</a>
-                    </li>
-                    <li>
-                        <a href="resultat.html">Resultat</a>
-                    </li>
+            <nav>
+                <ul id="nav_links">
+                    <li><a href="index.html">Hem</a></li>
+                    <li><a href="bli_medlem.html">Bli Medlem</a></li>
+                    <li><a href="tavlingar.html">Tävlingar</a></li>
+                    <li><a href="resultat.html">Resultat</a></li>
                 </ul>
-            </nav> -->
+                <div id="burger">
+                    <div id="line_1" class="burger_line"></div>
+                    <div id="line_2" class="burger_line"></div>
+                    <div id="line_3" class="burger_line"></div>
+                </div>
+            </nav>
         </header>
 
-        <nav>
-            <ul id="nav-links">
-                <li><a href="index.html">Hem</a></li>
-                <li><a href="bli_medlem.html">Bli Medlem</a></li>
-                <li><a href="tavlingar.html">Tävlingar</a></li>
-                <li><a href="resultat.html">Resultat</a></li>
-            </ul>
-            <div id="burger">
-                <div id="line_1" class="burger_line"></div>
-                <div id="line_2" class="burger_line"></div>
-                <div id="line_3" class="burger_line"></div>
-            </div>
-        </nav>
-
         <h1>Bli Medlem</h1>
-        <section class="bli_medlem_sections">
+        <section class="bli_medlem_sections" id="bli_medlem_secion1">
             <h2>Namn</h2>
-            <section class="bar"></section>
+            <section class="bar"><input type="text" placeholder="Namn Namnsson"></section>
         </section>
-        <section class="bli_medlem_sections">
+        <section class="bli_medlem_sections" id="bli_medlem_secion2">
             <h2>Klass</h2>
-            <section class="bar"></section>
+            <section class="bar"><input type="text" placeholder="1A/2B/3C"></section>
         </section>
-        <section class="bli_medlem_sections">
+        <section class="bli_medlem_sections" id="bli_medlem_secion3">
             <h2>Email</h2>
-            <section class="bar"></section>
+            <section class="bar"><input type="text" placeholder="namn.namnsson@elev.ga.ntig.se"></section>
         </section>
 
-        <a href="skickat.html"><button>Skicka</button></a>
+        <a href="skickat.html" id="skickat_button"><button>Skicka</button></a>
 
 
         <footer>
-            <ul>
-                <li><h2>Om Klubben</h2></li>
-                <li><a href="#">Medlemmar</a></li>
-                <li><a href="#">Ordningsregler</a></li>
-                <li><a href="#">Bli Medlem</a></li>
+            <ul class="footer_link_list">
+                <li class="footer_list_item"><h2>Om Klubben</h2></li>
+                <li class="footer_list_item"><a href="#">Medlemmar</a></li>
+                <li class="footer_list_item"><a href="#">Ordningsregler</a></li>
+                <li class="footer_list_item"><a href="#">Bli Medlem</a></li>
             </ul>
 
-            <ul>
-                <li><h2>Kontakta Oss</h2></li>
-                <li><a href="#">Discord</a></li>
-                <li><a href="#">Instagram</a></li>
-                <li><a href="#">Email</a></li>
+            <ul class="footer_link_list">
+                <li class="footer_list_item"><h2>Kontakta Oss</h2></li>
+                <li class="footer_list_item"><a href="#">Discord</a></li>
+                <li class="footer_list_item"><a href="#">Instagram</a></li>
+                <li class="footer_list_item"><a href="#">Email</a></li>
             </ul>
 
-            <ul>
-                <li><h2>Om Tävlingarna</h2></li>
-                <li><a href="#">Regler</a></li>
-                <li><a href="#">Deadlines</a></li>
-                <li><a href="#">Skicka In</a></li>
+            <ul class="footer_link_list">
+                <li class="footer_list_item"><h2>Om Tävlingarna</h2></li>
+                <li class="footer_list_item"><a href="#">Regler</a></li>
+                <li class="footer_list_item"><a href="#">Deadlines</a></li>
+                <li class="footer_list_item"><a href="#">Skicka In</a></li>
             </ul>
         </footer>
 
-
     </div>
+    <script src="js/script.js"></script>
 </body>
 </html>

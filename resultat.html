@@ -5,129 +5,128 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
     <div id="wrapper_resultat">
 
 
         <header>
+
             <a href="index.html">
-                <img src="" alt="">
-                <!-- LOGGAN (Hemsidans namn är del av loggan)-->
+                <img src="img/logo_test.jpg" alt="logo" id="logo_img">
             </a>
-            <!-- <nav id="nav_header">
-                <ul id="link_list">
-                    <li>
-                        <a href="index.html">Hem</a>
-                    </li>
-                    <li>
-                        <a href="bli_medlem.html">Bli Medlem</a>
-                    </li>
-                    <li>
-                        <a href="tavlingar.html">Tävlingar</a>
-                    </li>
-                    <li>
-                        <a href="resultat.html">Resultat</a>
-                    </li>
+
+            <nav>
+                <ul id="nav_links">
+                    <li><a href="index.html">Hem</a></li>
+                    <li><a href="bli_medlem.html">Bli Medlem</a></li>
+                    <li><a href="tavlingar.html">Tävlingar</a></li>
+                    <li><a href="resultat.html">Resultat</a></li>
                 </ul>
-            </nav> -->
+                <div id="burger">
+                    <div id="line_1" class="burger_line"></div>
+                    <div id="line_2" class="burger_line"></div>
+                    <div id="line_3" class="burger_line"></div>
+                </div>
+            </nav>
         </header>
 
-        <nav>
-            <ul id="nav-links">
-                <li><a href="index.html">Hem</a></li>
-                <li><a href="bli_medlem.html">Bli Medlem</a></li>
-                <li><a href="tavlingar.html">Tävlingar</a></li>
-                <li><a href="resultat.html">Resultat</a></li>
-            </ul>
-            <div id="burger">
-                <div id="line_1" class="burger_line"></div>
-                <div id="line_2" class="burger_line"></div>
-                <div id="line_3" class="burger_line"></div>
-            </div>
-        </nav>
 
-        <section id="results_1">
+        <h1 id="contest_h1">Resultat</h1>
 
-            <h3 class="contest_name">Sci-fi-tävlingen</h3>
 
-            <section class="results">
-                <img src="" alt="">
-                <!-- VIDEO!!!!??? -->
-                <img src="" alt="">
+        <h3 class="contest_name" id="contest_1_results">Sci-fi-tävlingen</h3>
 
-                <p class="rank">#1</p>
-                <p class="film_name">Star Wars 2</p>
-                <p class="film_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt vitae molestiae adipisci reiciendis et nihil. Cupiditate distinctio nihil aspernatur modi</p>
-                <p class="creator_name">Namn Namnson</p>
-            </section>
+        <section class="results_movie" id="result_movie_1">    
 
-            <section class="results">
-                <img src="" alt="">
-                <!-- VIDEO!!!!??? -->
-                <img src="" alt="">
+            <img src="" alt="">
+            <!-- VIDEO!!!!??? -->
+            <iframe width="175" height="100" src="https://www.youtube.com/embed/tRblwTsX6hQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <img src="" alt="">
+        </section>
 
-                <p class="rank">#2</p>
-                <p class="film_name">Sci-fi</p>
-                <p class="film_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt vitae molestiae adipisci reiciendis et nihil. Cupiditate distinctio nihil aspernatur modi</p>
-                <p class="creator_name">Namna Namndersson</p>
-            </section>
+        <section class="results_descriptions" id="result_description_1">
 
+            <p class="rank">#1</p>
+            <p class="film_name">Star Wars 2</p>
+            <p class="film_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt vitae molestiae adipisci reiciendis et nihil. Cupiditate distinctio nihil aspernatur modi</p>
+            <p class="creator_name">Namn Namnson</p>
         </section>
 
 
-        <section id="results_2">
+        <section class="results_movie" id="result_movie_2">    
+            <img src="" alt="">
+            <!-- VIDEO!!!!??? -->
+            <iframe width="175" height="100" src="https://www.youtube.com/embed/tRblwTsX6hQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <img src="" alt="">
+        </section>
 
-            <h3 class="contest_name">Tävling 2</h3>
+        <section class="results_descriptions" id="result_description_2">
+            <p class="rank">#2</p>
+            <p class="film_name">Sci-fi</p>
+            <p class="film_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt vitae molestiae adipisci reiciendis et nihil. Cupiditate distinctio nihil aspernatur modi</p>
+            <p class="creator_name">Namna Namndersson</p>
+        </section>
 
-            <section class="first_place">
-                <img src="" alt="">
-                <!-- VIDEO!!!!??? -->
-                <img src="" alt="">
+        <h3 class="contest_name" id="contest_2_results">Tävling 2</h3>
 
-                <p class="rank">#1</p>
-                <p class="film_name">Dörrfilmen</p>
-                <p class="film_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt vitae molestiae adipisci reiciendis et nihil. Cupiditate distinctio nihil aspernatur modi</p>
-                <p class="creator_name">Namn Namnson</p>
-            </section>
+        <section class="results_movie" id="result_movie_3">
 
-            <section class="second_place">
-                <img src="" alt="">
-                <!-- VIDEO!!!!??? -->
-                <img src="" alt="">
-                <p class="rank">#2</p>
-                <p class="film_name">Draculas återkomst</p>
-                <p class="film_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt vitae molestiae adipisci reiciendis et nihil. Cupiditate distinctio nihil aspernatur modi</p>
-                <p class="creator_name">Nandersmn Namnstrand</p>
-            </section>
+            <img src="" alt="">
+            <!-- VIDEO!!!!??? -->
+            <iframe width="175" height="100" src="https://www.youtube.com/embed/tRblwTsX6hQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <img src="" alt="">
+        </section>
+
+        <section class="results_descriptions" id="result_description_3">
+            <p class="rank">#1</p>
+            <p class="film_name">Dörrfilmen</p>
+            <p class="film_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt vitae molestiae adipisci reiciendis et nihil. Cupiditate distinctio nihil aspernatur modi</p>
+            <p class="creator_name">Namn Namnson</p>
+        </section>
+
+        <section class="results_movie" id="result_movie_4">
+            <img src="" alt="">
+            <!-- VIDEO!!!!??? -->
+            <iframe width="175" height="100" src="https://www.youtube.com/embed/tRblwTsX6hQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <img src="" alt="">
+        </section>
+
+        <section class="results_descriptions" id="result_description_4">
+            <p class="rank">#2</p>
+            <p class="film_name">Draculas återkomst</p>
+            <p class="film_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt vitae molestiae adipisci reiciendis et nihil. Cupiditate distinctio nihil aspernatur modi</p>
+            <p class="creator_name">Nandersmn Namnstrand</p>
         </section>
 
         <footer>
-            <ul>
-                <li><h2>Om Klubben</h2></li>
-                <li><a href="#">Medlemmar</a></li>
-                <li><a href="#">Ordningsregler</a></li>
-                <li><a href="#">Bli Medlem</a></li>
+            <ul class="footer_link_list">
+                <li class="footer_list_item"><h2>Om Klubben</h2></li>
+                <li class="footer_list_item"><a href="#">Medlemmar</a></li>
+                <li class="footer_list_item"><a href="#">Ordningsregler</a></li>
+                <li class="footer_list_item"><a href="#">Bli Medlem</a></li>
             </ul>
 
-            <ul>
-                <li><h2>Kontakta Oss</h2></li>
-                <li><a href="#">Discord</a></li>
-                <li><a href="#">Instagram</a></li>
-                <li><a href="#">Email</a></li>
+            <ul class="footer_link_list">
+                <li class="footer_list_item"><h2>Kontakta Oss</h2></li>
+                <li class="footer_list_item"><a href="#">Discord</a></li>
+                <li class="footer_list_item"><a href="#">Instagram</a></li>
+                <li class="footer_list_item"><a href="#">Email</a></li>
             </ul>
 
-            <ul>
-                <li><h2>Om Tävlingarna</h2></li>
-                <li><a href="#">Regler</a></li>
-                <li><a href="#">Deadlines</a></li>
-                <li><a href="#">Skicka In</a></li>
+            <ul class="footer_link_list">
+                <li class="footer_list_item"><h2>Om Tävlingarna</h2></li>
+                <li class="footer_list_item"><a href="#">Regler</a></li>
+                <li class="footer_list_item"><a href="#">Deadlines</a></li>
+                <li class="footer_list_item"><a href="#">Skicka In</a></li>
             </ul>
         </footer>
 
-
-</div>
-
+    </div>
+    
+    <script src="js/script.js"></script>    
 
 </body>
 </html>

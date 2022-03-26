@@ -34,7 +34,7 @@
 }
 
 header{
-    background: red;
+    background: rgb(75, 0, 130);
     grid-area: he;
     display: flex;
     align-items: center;
@@ -43,11 +43,13 @@ header{
 }
 
 nav{
-    background: orchid;
+    /* opacity: 80%; */
+    z-index: 1;
+    background: rgb(131, 66, 177);
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 10vh;
+    height: 8vh;
 
     /* background: aquamarine; */
     /* font-family: sans-serif; */
@@ -66,7 +68,7 @@ nav{
     justify-content: space-around;
     align-items: center;
     height: 100vh;
-    background-color: cadetblue;
+    background-color: rgb(131, 66, 177);
     position: absolute;
     right: 0px;
     top: -100vh;
@@ -83,7 +85,7 @@ nav{
 .burger_line{
     width: 25px;
     height: 3px;
-    background: darkblue;
+    background: rgb(255, 255, 255);
     margin: 5px;
     border-radius: 10%;
     transition: all 0.5s;
@@ -107,7 +109,10 @@ nav{
 }
 
 #trailer_section{
-    background: blue;
+    margin: 20px;
+    box-shadow: 0px 0px 10px rgb(196, 196, 196);
+
+    /* background: rgb(238, 238, 238); */
     grid-area: ts;
     display: flex;
     align-items: center;
@@ -115,7 +120,7 @@ nav{
 }
 
 #welcome_section{
-    background: pink;
+    background: rgb(75, 0, 130);
     grid-area: ws;
     display: flex;
     align-items: space-evenly;
@@ -126,6 +131,7 @@ nav{
     flex-direction: column;
     padding: 20px;
     font-size: 2rem;
+    background: rgb(75, 0, 130);
     /* align-items: space-evenly;
     justify-content: space-evenly; */
     /* flex-wrap: wrap; */
@@ -151,21 +157,28 @@ h3{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    background: white;
+    /* text-shadow: 10rem; */
+    /* box-shadow: 10px, -5px, -5px, red; */
+    /* box-shadow: 0px 0px 10px red; */
+    box-shadow: 0px 0px 10px rgb(196, 196, 196);
+
     /* position: relative; */
 }
 
 #advertisement_1{
-    background-color: aquamarine;
+    /* opacity: 50%; */
+    /* margin: 5px; */
     grid-area: a1;
+    /* box-shadow: 100px; */
+
 }
 
 #advertisement_2{
-    background-color: khaki;
     grid-area: a2;
 }
 
 #advertisement_3{
-    background-color: forestgreen;
     grid-area: a3;
 }
 
@@ -208,6 +221,7 @@ h3{
 }
 
 h1{
+    color: white;
     background: red;
     grid-area: h1;
     display: flex;
@@ -471,34 +485,73 @@ input{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
     background: sandybrown;
     grid-area: d4;
 }
 
 .rank{
+    font-size: 2rem;
+    margin-bottom: 10px;
+    margin-top: 5px;
+
     background: khaki;
 }
 
 .film_name{
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 1.35rem;
     background: aqua;
+    /* flex-direction: row; */
 }
 
 .film_description{
     background: goldenrod;
-
+    font-size: 1.10rem;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 .creator_name{
+    display: flex;
+    justify-content: space-around;
+    /* width: 190px; */
+    font-size: 1.05rem;
+    margin-left: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 
+    margin-right: 0;
     background: firebrick;
+    /* width: 180px; */
+
 }
 
+.crowd_images{
+    width: 100%;
+    height: auto;
+    position: relative;
+    bottom: 30px;
+}
+
+.crown_images{
+    width: 50px;
+    height: auto;
+    /* position: relative; */
+    /* bottom: 30px; */
+}
+
+.medal_images{
+    width: 75px;
+    height: auto;
+    margin: 10px;
+}
 
 footer{
     display: flex;
-    background: saddlebrown;
+    background: rgb(75, 0, 130);
     grid-area: fo;
     flex-direction: row;
     align-items: center;
@@ -506,12 +559,16 @@ footer{
 }
 
 .footer_link_list{
-    background: green;
+    /* background: rgb(0, 0, 0); */
+    /* box-shadow: 0px 0px 10px rgb(47, 0, 80); */
+
+
     display: flex;
     flex-direction: column;
     /* height: 75px;
     width: 40px; */
     align-items: center;
+    /* justify-content: space-evenly; */
     font-size: 0.9rem;
     /* margin: 10px; */
 }
@@ -525,12 +582,14 @@ h2{
 }
 
 li {
+    color: white;
     list-style: none;
     text-decoration: none;
     /* font-size: 0.5rem; */
 }
 
 a {
+    color: rgb(222, 194, 241);
     list-style: none;
     text-decoration: none;
 }

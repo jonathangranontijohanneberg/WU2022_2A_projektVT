@@ -162,7 +162,6 @@ h3{
     /* box-shadow: 10px, -5px, -5px, red; */
     /* box-shadow: 0px 0px 10px red; */
     box-shadow: 0px 0px 10px rgb(196, 196, 196);
-
     /* position: relative; */
 }
 
@@ -222,7 +221,9 @@ h3{
 
 h1{
     color: white;
-    background: red;
+    /* background: red; */
+    background: rgb(75, 0, 130);
+
     grid-area: h1;
     display: flex;
     font-size: 3rem;
@@ -231,23 +232,30 @@ h1{
 }
 
 #bli_medlem_secion1{
-    background: floralwhite;
+    /* background: floralwhite; */
     grid-area: b1;
+    background: white;
+    box-shadow: 0px 0px 10px rgb(196, 196, 196);
 }
 
 #bli_medlem_secion2{
-    background: rgb(105, 82, 35);
+    background: white;
+    box-shadow: 0px 0px 10px rgb(196, 196, 196);
+    /* background: rgb(105, 82, 35); */
     grid-area: b2;
 }
 
 #bli_medlem_secion3{
-    background: lawngreen;
+    background: white;
+    box-shadow: 0px 0px 10px rgb(196, 196, 196);
+    /* background: lawngreen; */
     grid-area: b3;
 }
 
 #skickat_button{
     grid-area: sk;
-    background: firebrick;
+    /* background: firebrick; */
+
     display: flex;
     padding: 10px;
 }
@@ -307,6 +315,10 @@ input{
     font-size: 2rem;
     justify-content: center;
     align-items: center;
+    /* background: rgb(126, 44, 185);
+    color: white;*/
+    box-shadow: 0px 0px 10px rgb(196, 196, 196);
+6
 }
 
 .contest_descriptions{
@@ -316,62 +328,67 @@ input{
     font-size: 1rem;
     justify-content: center;
     align-items: center;
+    background: white;
 }
 
 #contest_h1{
     grid-area: h1;
+    
 }
 
 .contest_name{
     display: flex;
     justify-content: center;
     align-items: center;
+    background: rgb(75, 0, 130);
+    color: white;
+
 }
 
 #contest_name1{
-    background: greenyellow;
+    /* background: greenyellow; */
     grid-area: n1;
 }
 
 #contest1_details{
-    background: hotpink;
+    /* background: hotpink; */
     grid-area: c1;
 }
 
 #contest1_description{
-    background: khaki;
+    /* background: khaki; */
     grid-area: d1;
 }
 
 #contest_name2{
-    background: sandybrown;
+    /* background: sandybrown; */
     grid-area: n2;
 }
 
 
 #contest2_details{
-    background: rebeccapurple;
+    /* background: rebeccapurple; */
     grid-area: c2;
 }
 
 #contest2_description{
-    background: khaki;
+    /* background: khaki; */
     grid-area: d2;
 }
 
 #contest_name3{
-    background: salmon;
+    /* background: salmon; */
     grid-area: n3;
 }
 
 
 #contest3_details{
-    background: honeydew;
+    /* background: honeydew; */
     grid-area: c3;
 }
 
 #contest3_description{
-    background: khaki;
+    /* background: khaki; */
     grid-area: d3;
 }
 
@@ -399,7 +416,16 @@ input{
     "d4 m4"
     "fo fo"
 }
+.results_movie{
+    background: rgb(34, 0, 58);
+    box-shadow: 0px 0px 10px rgb(196, 196, 196);
 
+}
+
+.results_descriptions{
+    background: white;
+    box-shadow: 0px 0px 10px rgb(196, 196, 196);
+}
 #contest_1_results{
     grid-area: r1;
 }
@@ -413,7 +439,7 @@ input{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: green;
+    /* background: green; */
     grid-area: m1;
 }
 
@@ -423,7 +449,7 @@ input{
     align-items: center;
     flex-direction: column;
 
-    background: tomato;
+    /* background: tomato; */
     grid-area: d1;
 }
 
@@ -434,7 +460,7 @@ input{
     align-items: center;
     flex-direction: column;
 
-    background: firebrick;
+    /* background: firebrick; */
     grid-area: m2;
 }
 
@@ -444,7 +470,7 @@ input{
     align-items: center;
     flex-direction: column;
 
-    background: darkgoldenrod;
+    /* background: darkgoldenrod; */
     grid-area: d2;
 }
 
@@ -455,7 +481,7 @@ input{
     align-items: center;
     flex-direction: column;
 
-    background: darkkhaki;
+    /* background: darkkhaki; */
     grid-area: m3;
 }
 
@@ -465,7 +491,7 @@ input{
     align-items: center;
     flex-direction: column;
 
-    background: green;
+    /* background: green; */
     grid-area: d3;
 }
 
@@ -476,7 +502,7 @@ input{
     align-items: center;
     flex-direction: column;
 
-    background: gold;
+    /* background: gold; */
     grid-area: m4;
 }
 
@@ -485,7 +511,7 @@ input{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: sandybrown;
+    /* background: sandybrown; */
     grid-area: d4;
 }
 
@@ -494,7 +520,8 @@ input{
     margin-bottom: 10px;
     margin-top: 5px;
 
-    background: khaki;
+    /* background: khaki; */
+    
 }
 
 .film_name{
@@ -503,12 +530,12 @@ input{
     align-items: center;
     margin-bottom: 10px;
     font-size: 1.35rem;
-    background: aqua;
+    /* background: aqua; */
     /* flex-direction: row; */
 }
 
 .film_description{
-    background: goldenrod;
+    /* background: goldenrod; */
     font-size: 1.10rem;
     margin-left: 15px;
     margin-right: 15px;
@@ -524,7 +551,7 @@ input{
     margin-bottom: 10px;
 
     margin-right: 0;
-    background: firebrick;
+    /* background: firebrick; */
     /* width: 180px; */
 
 }

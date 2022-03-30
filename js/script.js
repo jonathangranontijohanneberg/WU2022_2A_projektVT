@@ -1,8 +1,11 @@
-const nav = document.getElementById("nav-links")
+const nav = document.getElementById("nav_links")
 const burger = document.getElementById("burger")
 
 function toggleMenu() {
-    document.getElementById("nav_links").classList.toggle("nav-active")
+    nav.classList.toggle('nav_active')
+    // burger.classList.toggle('crossed_line')
+    
+    // document.getElementById("nav_links").classList.toggle("nav_active")
     burger.classList.toggle("crossed_line")
 }
 

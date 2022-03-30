@@ -318,7 +318,7 @@ input{
     /* background: rgb(126, 44, 185);
     color: white;*/
     box-shadow: 0px 0px 10px rgb(196, 196, 196);
-6
+
 }
 
 .contest_descriptions{
@@ -619,4 +619,10 @@ a {
     color: rgb(222, 194, 241);
     list-style: none;
     text-decoration: none;
+}
+
+a:hover{
+    list-style: none;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
 }

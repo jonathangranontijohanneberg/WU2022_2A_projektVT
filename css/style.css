@@ -81,7 +81,7 @@ nav{
 }
 
 .nav_active {
-    transform: translateY(100vh)
+    transform: translateY(100vh);
 }
 
 .burger_line{
@@ -194,7 +194,6 @@ h3{
     margin-right: 30px;
 }
 
-
 #wrapper_bli_medlem{
     /* background-color: bisque; */
 
@@ -210,16 +209,17 @@ h3{
     grid-template-rows: 175px 7rem 5rem 5rem 5rem 7rem 150px;
 
     grid-template-areas: 
-    "he he he"
-    "h1 h1 h1"
-    "b1 b1 . "
-    "b2 b2 . "
-    "b3 b3 . "
-    "sk .  . "
-    "fo fo fo"
+    "he he"
+    "h1 h1"
+    "b1 b1"
+    "b2 b2"
+    "b3 b3"
+    "sk . "
+    "fo fo"
     ;
     
 }
+
 
 h1{
     color: white;
@@ -585,6 +585,7 @@ footer{
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    
 }
 
 .footer_link_list{
@@ -631,7 +632,12 @@ a:hover{
 
 .advertisement_img:hover{
     opacity: 75%;
+    transition: all 0.5s;
 }
+
+/* .contest_details_computer_img{
+    display: none;
+} */
 
 @media screen and (min-width:800px) {
 
@@ -653,7 +659,7 @@ a:hover{
         /* background-color: bisque; */
     
         grid-template-columns: 3fr 6fr 6fr 6fr 3fr;
-        grid-template-rows: 175px 3rem 500px 1.5fr 50px 400px 75px 150px;
+        grid-template-rows: 175px 2rem 500px 1.5fr 50px 400px 75px 150px;
     
         grid-template-areas: 
         "he he he he he"
@@ -730,6 +736,122 @@ a:hover{
     #welcome_text{
         font-size: 4rem;
     }
+
+    /* #wrapper_bli_medlem{
+        display: grid;
+        height: 100%;
+        width: 100%;
+        gap: 8px;
+        grid-template-columns: 0.75fr 4fr 1fr 0.75fr;
+        grid-template-rows: 175px 7rem 5rem 5rem 5rem 7rem 150px;
+        grid-template-areas: 
+        "he he he he"
+        "h1 h1 h1"
+        "b1 b1 . "
+        "b2 b2 . "
+        "b3 b3 . "
+        "sk .  . "
+        "fo fo fo"
+        ;
+    } */
+    #wrapper_bli_medlem{
+        display: grid;
+        height: 100%;
+        width: 100%;
+        gap: 8px;
+        grid-template-columns: 0.75fr 1.75fr 0.40fr 0.75fr;
+        grid-template-rows: 175px 2rem 7rem 10rem 10rem 10rem 7rem 150px;
+        grid-template-areas: 
+        "he he he he"
+        "na na na na"
+        "h1 h1 h1 h1"
+        ".  b1 b1 . "
+        ".  b2 b2 . "
+        ".  b3 b3 . "
+        "-  sk .  . "
+        "fo fo fo fo"
+        ;
+    }
+    
+    .bli_medlem_sections{
+        margin: 10px;
+    }
+
+    input{
+        font-size: 1.6rem;
+
+        width: 80%;
+        height: 3rem;
+        /* font-size: ; */
+    }
+
+    
+    #wrapper_tavlingar{
+        /* background: bisque; */
+        /* background-image: url("img/logo_test.jpg"); */
+
+        display: grid;
+        height: 100%;
+        width: 100%;
+        gap: 8px;
+        grid-template-columns: 1fr 8fr 8fr 1fr;
+        grid-template-rows: 175px 2rem 7rem 6rem 30rem 6rem 30rem 6rem 30rem 150px;
+        grid-template-areas: 
+        "he he he he"
+        "na na na na"
+        "h1 h1 h1 h1"
+        "n1 n1 n1 n1"
+        ".  c1 d1 . "
+        "n2 n2 n2 n2"
+        ".  d2 c2 . "
+        "n3 n3 n3 n3"
+        ".  c3 d3 . "
+        "fo fo fo fo"
+        ;
+    }
+
+    .contest_details{
+        font-size: 3rem;
+        /* background-image: url("img/bli_medlem_test.png"); */
+        /* background-size: 20px 40px; */
+
+        /* background-color: none; */
+        /* background-size: contain; */
+        /* background-size: 400px 1000px; */
+    }
+    
+    .contest_descriptions{
+        padding: 20px;
+        display: flex;
+        /* flex-direction: column; */
+        font-size: 1.5rem;
+        justify-content: center;
+        align-items: center;
+        background: white;
+    }
+    
+    /* .contest_details_computer_img{
+        display: block;
+        object-fit: fill;
+        width: 100%;
+        height: auto;
+        z-index: 2;
+    } */
+
+    #contest_h1{
+        grid-area: h1;
+        
+    }
+    
+    .contest_name{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgb(75, 0, 130);
+        color: white;
+    
+    }
+
 
     h1{
         font-size: 4rem;

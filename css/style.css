@@ -647,7 +647,7 @@ p{
 
 .advertisement_img:hover{
     opacity: 75%;
-    transition: all 0.5s;
+    transition: all 0.2s;
 }
 
 /* .contest_details_computer_img{

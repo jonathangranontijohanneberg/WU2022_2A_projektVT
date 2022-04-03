@@ -10,7 +10,7 @@
     width: 100%;
     gap: 8px;
     grid-template-columns: 1fr 6fr 1fr;
-    grid-template-rows: 175px 300px 1.5fr 400px 400px 400px 150px;
+    grid-template-rows: 175px 300px 1.5fr 25rem 25rem 25rem 10rem;
 
     grid-template-areas: 
     "he he he"
@@ -39,7 +39,7 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 8vh;
+    height: 50px;
     right: 0px;
     top: 0px;
     width: 56px;
@@ -161,7 +161,7 @@ nav{
     width: 100%;
     gap: 8px;
     grid-template-columns: 4fr 1fr;
-    grid-template-rows: 175px 7rem 5rem 5rem 5rem 7rem 150px;
+    grid-template-rows: 175px 7rem 5rem 5rem 5rem 7rem 10rem;
     grid-template-areas: 
     "he he"
     "h1 h1"
@@ -224,7 +224,7 @@ input{
     width: 100%;
     gap: 8px;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 175px 100px 3rem 1fr 3rem 1fr 3rem 1fr 150px;
+    grid-template-rows: 175px 100px 3rem 1fr 3rem 1fr 3rem 1fr 10rem;
     grid-template-areas: 
     "he he"
     "h1 h1"
@@ -314,7 +314,7 @@ input{
     width: 100%;
     gap: 8px;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 175px 100px 5rem 1fr 1fr 5rem 1fr 1fr 150px;
+    grid-template-rows: 175px 100px 5rem 1fr 1fr 5rem 1fr 1fr 10rem;
     grid-template-areas: 
     "he he"
     "h1 h1"
@@ -509,6 +509,11 @@ h3{
 
 }
 
+h4{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 2rem;
+}
+
 li {
     color: white;
     list-style: none;
@@ -544,6 +549,7 @@ p{
     }
 
     nav{
+        height: 2rem;
         left: 0;
         right: 0;
         top: 175px;
@@ -554,7 +560,7 @@ p{
 
     #wrapper_index{
         grid-template-columns: 3fr 6fr 6fr 6fr 3fr;
-        grid-template-rows: 175px 2rem 500px 1.5fr 50px 400px 75px 150px;
+        grid-template-rows: 175px 2rem 500px 1.5fr 50px 25rem 75px 10rem;
         grid-template-areas: 
         "he he he he he"
         "na na na na na"
@@ -611,7 +617,7 @@ p{
         width: 100%;
         gap: 8px;
         grid-template-columns: 0.75fr 1.75fr 0.40fr 0.75fr;
-        grid-template-rows: 175px 2rem 7rem 10rem 10rem 10rem 7rem 150px;
+        grid-template-rows: 175px 2rem 7rem 10rem 10rem 10rem 7rem 10rem;
         grid-template-areas: 
         "he he he he"
         "na na na na"
@@ -630,7 +636,6 @@ p{
 
     input{
         font-size: 1.6rem;
-
         width: 80%;
         height: 3rem;
     }
@@ -642,7 +647,7 @@ p{
         width: 100%;
         gap: 8px;
         grid-template-columns: 1fr 8fr 8fr 1fr;
-        grid-template-rows: 175px 2rem 7rem 6rem 30rem 6rem 30rem 6rem 30rem 150px;
+        grid-template-rows: 175px 2rem 7rem 6rem 30rem 6rem 30rem 6rem 30rem 10rem;
         grid-template-areas: 
         "he he he he"
         "na na na na"
@@ -688,7 +693,7 @@ p{
         width: 100%;
         gap: 8px;
         grid-template-columns: 1fr 2fr 2fr 1fr;
-        grid-template-rows: 175px 2rem 7rem 100px 1fr 1fr 100px 1fr 1fr 150px;
+        grid-template-rows: 175px 2rem 7rem 100px 1fr 1fr 100px 1fr 1fr 10rem;
         grid-template-areas: 
         "he he he he"
         "na na na na"
@@ -700,6 +705,11 @@ p{
         ".  d3 m3 . "
         ".  d4 m4 . "
         "fo fo fo fo"
+    }
+
+    .films {
+        width: 30vw;
+        height: 20vw;
     }
 
     h1{

@@ -277,7 +277,7 @@ input{
 
 #contest1_details{
     grid-area: c1;
-    background-image: url(/img/crowd.png);
+    background-image: url(/img/sjudagars_tavlingen_img.jpg);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
@@ -294,6 +294,11 @@ input{
 
 #contest2_details{
     grid-area: c2;
+    background-image: url(/img/fantasy_tavlingen_img.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+
 }
 
 #contest2_description{
@@ -307,6 +312,10 @@ input{
 
 #contest3_details{
     grid-area: c3;
+    background-image: url(/img/konst_films_tavlingen_img.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 #contest3_description{
@@ -559,7 +568,8 @@ p{
         right: 0;
         top: 175px;
         width: 100%;
-        position: static;
+        position: sticky;
+        top: 10px;
         grid-area: na;
     }
 
@@ -652,7 +662,7 @@ p{
         width: 100%;
         gap: 8px;
         grid-template-columns: 1fr 8fr 8fr 1fr;
-        grid-template-rows: 175px 2rem 7rem 6rem 30rem 6rem 30rem 6rem 30rem 10rem;
+        grid-template-rows: 175px 2rem 7rem 6rem 40vw 6rem 40vw 6rem 40vw 10rem;
         grid-template-areas: 
         "he he he he"
         "na na na na"

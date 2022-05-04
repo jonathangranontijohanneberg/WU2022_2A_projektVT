@@ -277,6 +277,10 @@ input{
 
 #contest1_details{
     grid-area: c1;
+    background-image: url(/img/crowd.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 #contest1_description{

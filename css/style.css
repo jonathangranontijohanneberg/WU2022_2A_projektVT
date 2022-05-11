@@ -161,7 +161,7 @@ nav{
     width: 100%;
     gap: 8px;
     grid-template-columns: 4fr 1fr;
-    grid-template-rows: 175px 7rem 5rem 5rem 5rem 7rem 10rem;
+    grid-template-rows: 175px 7rem 6rem 6rem 6rem 7rem 10rem;
     grid-template-areas: 
     "he he"
     "h1 h1"
@@ -207,6 +207,7 @@ button{
     font-size: 1.25rem;
     box-shadow: 0px 0px 2px rgb(19, 19, 19);
     border: none;
+    margin-left: 10px;
 }
 button:hover{
     background: rgb(248, 238, 255);
@@ -214,9 +215,12 @@ button:hover{
 }
 
 input{
-    width: 18rem;
-    height: 2.75rem;
-    font-size: 1rem;
+    width: 70vw;
+    height: 7vw;
+}
+
+input::placeholder{
+    font-size: 3.5vw;
 }
 
 .bli_medlem_sections{
@@ -587,7 +591,7 @@ p{
 
     #wrapper_index{
         grid-template-columns: 3fr 6fr 6fr 6fr 3fr;
-        grid-template-rows: 175px 2rem 500px 1.5fr 50px 25rem 75px 10rem;
+        grid-template-rows: 175px 2rem 500px 1.5fr 50px minmax(25rem, auto) 75px 10rem;
         grid-template-areas: 
         "he he he he he"
         "na na na na na"
@@ -667,6 +671,10 @@ p{
         height: 3rem;
     }
 
+    input::placeholder{
+        font-size: 1.5rem;
+    }
+    
     
     #wrapper_tavlingar{
         display: grid;
@@ -717,6 +725,8 @@ p{
 
     .skicka_in_button{
         margin-top: 2rem;
+        margin-left: 0px;
+
     }
 
     #wrapper_resultat{

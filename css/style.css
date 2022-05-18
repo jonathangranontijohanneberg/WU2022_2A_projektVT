@@ -236,7 +236,7 @@ input::placeholder{
     width: 100%;
     gap: 8px;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 175px 100px 3rem 3rem 40vw 3rem 40vw 3rem 40vw 10rem;
+    grid-template-rows: 175px 100px 11rem 3rem 40vw 3rem 40vw 3rem 40vw 10rem;
     grid-template-areas: 
     "he he"
     "h1 h1"
@@ -259,7 +259,6 @@ input::placeholder{
     justify-content: center;
     align-items: center;
     box-shadow: 0px 0px 10px rgb(196, 196, 196);
-
     font-weight: bold;
     color: white;
     text-shadow: 1px 1px 5px rgb(19, 19, 19);
@@ -344,16 +343,14 @@ input::placeholder{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* width: 100%; */
-    font-size: 1.2rem;
+    /* font-size: 1.2rem; */
     padding: 10px;
     padding-left: 30px;
     padding-right: 30px;
-    margin-left: 150px;
-    margin-right: 150px;
+    margin-left: 15px;
+    margin-right: 15px;
     grid-area: pd;
     box-shadow: 0px 0px 10px rgb(196, 196, 196);
-
 }
 
 #wrapper_resultat{
@@ -362,7 +359,7 @@ input::placeholder{
     width: 100%;
     gap: 8px;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 175px 100px 5rem 5rem 1fr 1fr 5rem 1fr 1fr 10rem;
+    grid-template-rows: 175px 100px 10rem 5rem 1fr 1fr 5rem 1fr 1fr 10rem;
     grid-template-areas: 
     "he he"
     "h1 h1"
@@ -701,7 +698,7 @@ p{
         width: 100%;
         gap: 8px;
         grid-template-columns: 1fr 8fr 8fr 1fr;
-        grid-template-rows: 175px 2rem 7rem 10rem 6rem 40vw 6rem 40vw 6rem 40vw 10rem;
+        grid-template-rows: 175px 2rem 7rem minmax(10rem, auto) 6rem 40vw 6rem 40vw 6rem 40vw 10rem;
         grid-template-areas: 
         "he he he he"
         "na na na na"
@@ -749,13 +746,28 @@ p{
 
     }
 
+    #page_description{
+        background: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.2rem;
+        padding: 10px;
+        padding-left: 30px;
+        padding-right: 30px;
+        margin-left: 150px;
+        margin-right: 150px;
+        grid-area: pd;
+        box-shadow: 0px 0px 10px rgb(196, 196, 196);
+    }
+
     #wrapper_resultat{
         display: grid;
         height: 100%;
         width: 100%;
         gap: 8px;
         grid-template-columns: 1fr 2fr 2fr 1fr;
-        grid-template-rows: 175px 2rem 7rem 8rem 100px 1fr 1fr 100px 1fr 1fr 10rem;
+        grid-template-rows: 175px 2rem 7rem minmax(8rem, auto) 100px 1fr 1fr 100px 1fr 1fr 10rem;
         grid-template-areas: 
         "he he he he"
         "na na na na"

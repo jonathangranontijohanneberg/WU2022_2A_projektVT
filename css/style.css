@@ -161,10 +161,11 @@ nav{
     width: 100%;
     gap: 8px;
     grid-template-columns: 4fr 1fr;
-    grid-template-rows: 175px 7rem 6rem 6rem 6rem 7rem 10rem;
+    grid-template-rows: 175px 7rem 7rem 6rem 6rem 6rem 7rem 10rem;
     grid-template-areas: 
     "he he"
     "h1 h1"
+    "pd pd"
     "b1 b1"
     "b2 b2"
     "b3 b3"
@@ -236,7 +237,7 @@ input::placeholder{
     width: 100%;
     gap: 8px;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 175px 100px 11rem 3rem 40vw 3rem 40vw 3rem 40vw 10rem;
+    grid-template-rows: 175px 100px 12rem 3rem minmax(40vw, auto) 3rem minmax(40vw, auto) 3rem minmax(40vw, auto) 10rem;
     grid-template-areas: 
     "he he"
     "h1 h1"
@@ -252,6 +253,10 @@ input::placeholder{
     
 }
 
+/* #contest_information3{
+
+} */
+
 .contest_details{
     display: flex;
     flex-direction: column;
@@ -265,7 +270,10 @@ input::placeholder{
 
 }
 .contest_description_header{
-    font-size: 3rem;
+    /* font-size: 3rem; */
+    font-size: 4vw;
+    margin-bottom: 10px;
+
 }
 
 .contest_descriptions{
@@ -669,11 +677,12 @@ p{
         width: 100%;
         gap: 8px;
         grid-template-columns: 0.75fr 1.75fr 0.40fr 0.75fr;
-        grid-template-rows: 175px 2rem 7rem 10rem 10rem 10rem 7rem 10rem;
+        grid-template-rows: 175px 2rem 7rem 6rem 10rem 10rem 10rem 7rem 10rem;
         grid-template-areas: 
         "he he he he"
         "na na na na"
         "h1 h1 h1 h1"
+        "pd pd pd pd"
         ".  b1 b1 . "
         ".  b2 b2 . "
         ".  b3 b3 . "
@@ -726,7 +735,6 @@ p{
     
     .contest_description_header{
         font-size: 4vw;
-        /* 3rem; */
         margin-bottom: 10px;
     }
 

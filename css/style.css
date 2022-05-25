@@ -216,11 +216,13 @@ nav{
     grid-area: b3;
 }
 
-#skickat_button{
+#skicka_button{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     grid-area: sk;
     display: flex;
     padding: 10px;
+    margin-bottom: 20px;
+
 }
 
 button{
@@ -275,10 +277,6 @@ input::placeholder{
     ;
     
 }
-
-/* #contest_information3{
-
-} */
 
 .contest_details{
     display: flex;
@@ -379,7 +377,6 @@ input::placeholder{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* font-size: 1.2rem; */
     padding: 10px;
     padding-left: 30px;
     padding-right: 30px;

@@ -34,7 +34,7 @@ header{
 }
 
 nav{
-    z-index: 1;
+    z-index: 2;
     background: rgb(56, 9, 89);
     display: flex;
     justify-content: center;
@@ -64,6 +64,7 @@ nav{
 }
 
 .nav_active {
+    /* z-index: 2; */
     transform: translateY(100vh);
 }
 
@@ -261,58 +262,84 @@ input::placeholder{
     height: 100%;
     width: 100%;
     gap: 8px;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 175px 100px 12rem 3rem minmax(40vw, auto) 3rem minmax(40vw, auto) 3rem minmax(40vw, auto) 10rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 175px 100px 12rem 3rem 100vw 125px 3rem 100vw 125px 3rem 100vw 125px 10rem;
     grid-template-areas: 
-    "he he"
-    "h1 h1"
-    "pd pd"
-    "n1 n1"
-    "c1 d1"
-    "n2 n2"
-    "d2 c2"
-    "n3 n3"
-    "c3 d3"
-    "fo fo"
+    "he"
+    "h1"
+    "pd"
+    "n1"
+    "d1"
+    "c1"
+    "n2"
+    "d2"
+    "c2"
+    "n3"
+    "d3"
+    "c3"
+    "fo"
     ;
     
 }
 
 .contest_details{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    /* position: absolute; */
+    /* bottom: 100px; */
     font-size: 2rem;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0px 0px 10px rgb(196, 196, 196);
+    justify-content: flex-start;
+    margin-left: 20px;
+    align-items: flex-start;
+    /* box-shadow: 0px 0px 10px rgb(196, 196, 196); */
     font-weight: bold;
-    color: white;
-    text-shadow: 1px 1px 5px rgb(19, 19, 19);
+    /* color: white;
+    text-shadow: 1px 1px 5px rgb(19, 19, 19); */
 
 }
+
+.skicka_in_button{
+    position: absolute;
+    margin-top: 55px;
+    margin-left: 10px;
+    margin-left: 0px;
+
+}
+
+
 .contest_description_header{
-    /* font-size: 3rem; */
-    font-size: 4vw;
+    font-size: 6vw;
     margin-bottom: 10px;
 
 }
 
 .contest_descriptions{
-
-    padding: 20px;
+    color: white;
+    text-shadow: 1px 1px 5px rgb(19, 19, 19);
+    padding: 17vw;
     display: flex;
     flex-direction: column;
-    font-size: 1rem;
+    font-size: 1.4rem;
     justify-content: center;
     align-items: center;
-    background: white;
 }
+
+.contest_description_background{
+
+    opacity: 60%;
+    position: absolute;
+    background: rgb(56, 9, 89);
+    height: 300px;
+    width: 100%;
+}
+
 
 #contest_h1{
     grid-area: h1;
 }
 
 .contest_name{
+    height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -327,13 +354,16 @@ input::placeholder{
 
 #contest1_details{
     grid-area: c1;
-    background-image: url(/img/sjudagars_tavlingen_img.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center center;
+
 }
 
 #contest1_description{
+
+    display: flex;
+    background-image: url(/img/sjudagars_tavlingen_img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
     grid-area: d1;
 }
 
@@ -344,14 +374,14 @@ input::placeholder{
 
 #contest2_details{
     grid-area: c2;
-    background-image: url(/img/fantasy_tavlingen_img.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center center;
 
 }
 
 #contest2_description{
+    background-image: url(/img/fantasy_tavlingen_img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
     grid-area: d2;
 }
 
@@ -362,13 +392,13 @@ input::placeholder{
 
 #contest3_details{
     grid-area: c3;
-    background-image: url(/img/konst_films_tavlingen_img.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center center;
 }
 
 #contest3_description{
+    background-image: url(/img/konst_films_tavlingen_img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
     grid-area: d3;
 }
 
@@ -589,6 +619,9 @@ h3{
 }
 
 h4{
+
+    z-index: 1;
+    margin-right: 13px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 2rem;
 }
@@ -613,6 +646,7 @@ a:hover{
 }
 
 p{
+    z-index: 1;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -628,6 +662,7 @@ p{
     }
 
     nav{
+        z-index: 2;
         height: 2rem;
         left: 0;
         right: 0;
@@ -774,8 +809,22 @@ p{
         ;
     }
 
+    .contest_description_background{
+        display: none;
+    }
+
+
     .contest_details{
         font-size: 7vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0px 0px 10px rgb(196, 196, 196);
+        font-weight: bold;
+        color: white;
+        margin-left: 0px;
+        text-shadow: 1px 1px 5px rgb(19, 19, 19);
 
     }
     
@@ -785,8 +834,54 @@ p{
     }
 
     .contest_descriptions{
+        padding: 20px;
+
+        color: black;
+        text-shadow: none;
+    
         font-size: 1.5rem;
     }
+
+    #contest1_details{
+        grid-area: c1;
+        background-image: url(/img/sjudagars_tavlingen_img.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    #contest2_details{
+        grid-area: c2;
+        background-image: url(/img/fantasy_tavlingen_img.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }    
+
+    #contest3_details{
+        grid-area: c3;
+        background-image: url(/img/konst_films_tavlingen_img.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    #contest1_description{
+        background-image: none;
+
+        grid-area: d1;
+    }
+    #contest2_description{
+        background-image: none;
+
+        grid-area: d2;
+    }
+    #contest3_description{
+        background-image: none;
+
+        grid-area: d3;
+    }
+    
 
     #contest_h1{
         grid-area: h1;
@@ -801,6 +896,10 @@ p{
     }
 
     .skicka_in_button{
+
+        position: relative;
+    
+
         margin-top: 2rem;
         margin-left: 0px;
 
@@ -875,6 +974,7 @@ p{
     }
 
     .nav_active {
+        z-index: 2;
         transform: none;
     }
 

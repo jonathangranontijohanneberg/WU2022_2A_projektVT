@@ -466,8 +466,35 @@ input::placeholder{
 }
 
 .results_descriptions{
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+
     background: white;
     box-shadow: 0px 0px 10px rgb(196, 196, 196);
+}
+
+.results_descriptions_headers{
+    font-size: 1.5rem;
+    margin-right: 20px;
+}
+
+.results_descriptions_headers_and_information{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: baseline;
+    box-shadow: 0px 0px 2px rgb(196, 196, 196);
+    padding-left: 30px;
+
+    width: 100%;
+}
+
+.results_descriptions_summaries{
+    display: flex;
+    flex-direction: column;
 }
 
 #contest_1_results{
@@ -489,10 +516,6 @@ input::placeholder{
 }
 
 #result_description_1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     grid-area: d1;
 }
 
@@ -506,10 +529,6 @@ input::placeholder{
 }
 
 #result_description_2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     grid-area: d2;
 }
 
@@ -523,10 +542,6 @@ input::placeholder{
 }
 
 #result_description_3{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     grid-area: d3;
 }
 
@@ -540,10 +555,6 @@ input::placeholder{
 }
 
 #result_description_4{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     grid-area: d4;
 }
 

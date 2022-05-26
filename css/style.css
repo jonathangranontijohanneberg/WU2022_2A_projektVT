@@ -444,19 +444,33 @@ input::placeholder{
     height: 100%;
     width: 100%;
     gap: 8px;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 175px 100px auto 5rem 1fr 1fr 5rem 1fr 1fr 10rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 175px 100px auto 5rem auto auto auto auto 5rem auto auto auto auto 10rem;
     grid-template-areas: 
-    "he he"
-    "h1 h1"
-    "pd pd"
-    "r1 r1"
-    "m1 d1"
-    "m2 d2"
-    "r2 r2"
-    "d3 m3"
-    "d4 m4"
-    "fo fo"
+    "he"
+    "h1"
+    "pd"
+    "r1"
+    "m1"
+    "d1"
+    "m2"
+    "d2"
+    "r2"
+    "m3"
+    "d3"
+    "m4"
+    "d4"
+    "fo"
+}
+
+.films{
+    width: 90%;
+    height: 300px;
+    padding-bottom: 20px;
+}
+
+.crowd_images{
+    display: none;
 }
 
 .results_movie{
@@ -588,13 +602,6 @@ input::placeholder{
     margin-bottom: 10px;
 
     margin-right: 0;
-}
-
-.crowd_images{
-    width: 100%;
-    height: auto;
-    position: relative;
-    bottom: 30px;
 }
 
 .crown_images{
@@ -1029,7 +1036,18 @@ p{
     .films {
         width: 30vw;
         height: 20vw;
+        padding-bottom: 0px;
+
     }
+
+.crowd_images{
+    display: flex;
+    width: 100%;
+    height: auto;
+    position: relative;
+    bottom: 30px;
+    /* margin-bottom: 0px; */
+}
 
     h1{
         font-size: 4rem;

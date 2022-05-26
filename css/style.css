@@ -263,48 +263,60 @@ input::placeholder{
     width: 100%;
     gap: 8px;
     grid-template-columns: 1fr;
-    grid-template-rows: 175px 100px 12rem 3rem 100vw 125px 3rem 100vw 125px 3rem 100vw 125px 10rem;
+    grid-template-rows: 175px 100px 12rem 3rem 100vw 3rem 100vw 3rem 100vw 10rem;
+    /* 125px  */
+    
+    /* 125px  */
+    
+    /* 125px */
     grid-template-areas: 
     "he"
     "h1"
     "pd"
     "n1"
     "d1"
-    "c1"
+    /* "c1" */
     "n2"
     "d2"
-    "c2"
+    /* "c2" */
     "n3"
     "d3"
-    "c3"
+    /* "c3" */
     "fo"
     ;
     
 }
 
 .contest_details{
+    display: none;
+
+}
+
+.contest_details_mobile{
+
     display: flex;
     flex-direction: row;
-    /* position: absolute; */
-    /* bottom: 100px; */
     font-size: 2rem;
-    justify-content: flex-start;
-    margin-left: 20px;
-    align-items: flex-start;
-    /* box-shadow: 0px 0px 10px rgb(196, 196, 196); */
+    /* margin-left: -93px; */
     font-weight: bold;
-    /* color: white;
-    text-shadow: 1px 1px 5px rgb(19, 19, 19); */
-
+    margin-top: 10px;
 }
+
+.skicka_in_button_mobile{
+    /* position: absolute; */
+    margin-left: 0px;
+    margin-top: 10px;
+    z-index: 1;
+}
+
 
 .skicka_in_button{
-    position: absolute;
-    margin-top: 55px;
-    margin-left: 10px;
+    /* position: absolute; */
     margin-left: 0px;
-
+    margin-top: 10px;
+    /* display: none; */
 }
+
 
 
 .contest_description_header{
@@ -324,14 +336,28 @@ input::placeholder{
     align-items: center;
 }
 
+
 .contest_description_background{
 
-    opacity: 60%;
+    opacity: 80%;
     position: absolute;
     background: rgb(56, 9, 89);
-    height: 300px;
+    /* height: 300px; */
     width: 100%;
 }
+
+#contest_description_background_1{
+    height: 370px;
+}
+
+#contest_description_background_2{
+    height: 350px;
+}
+
+#contest_description_background_3{
+    height: 300px;
+}
+
 
 
 #contest_h1{
@@ -353,7 +379,12 @@ input::placeholder{
 }
 
 #contest1_details{
-    grid-area: c1;
+    /* grid-area: c1; */
+    /* position: absolute; */
+    /* background: rebeccapurple;
+    margin-bottom: 100px; */
+    /* position: absolute; */
+    top: 1000px;
 
 }
 
@@ -828,6 +859,11 @@ p{
 
     }
     
+
+    .contest_details_mobile{
+        display: none;
+    }
+
     .contest_description_header{
         font-size: 4vw;
         margin-bottom: 10px;
@@ -904,6 +940,11 @@ p{
         margin-left: 0px;
 
     }
+
+    .skicka_in_button_mobile{
+        display: none;
+    }
+
 
     #page_description{
         background: white;

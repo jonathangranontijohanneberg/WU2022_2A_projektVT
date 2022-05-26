@@ -494,6 +494,8 @@ input::placeholder{
 .results_descriptions_summaries{
     display: flex;
     flex-direction: column;
+    padding-bottom: 10px;
+
 }
 
 #contest_1_results{
@@ -994,13 +996,13 @@ p{
         align-items: baseline;
         box-shadow: 0px 0px 2px rgb(196, 196, 196);
         padding-left: 30px;
-    
         width: 100%;
     }
     
     .results_descriptions_summaries{
         display: flex;
         flex-direction: column;
+        padding-bottom: 10px;
     }
 
     #wrapper_resultat{

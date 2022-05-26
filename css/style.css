@@ -162,7 +162,7 @@ nav{
     width: 100%;
     gap: 8px;
     grid-template-columns: 4fr 1fr;
-    grid-template-rows: 175px 7rem 7rem auto 20rem 6rem 6rem 6rem 7rem 10rem;
+    grid-template-rows: 175px 7rem auto auto 20rem 6rem 6rem 6rem 7rem 10rem;
     grid-template-areas: 
     "he he"
     "h1 h1"
@@ -263,25 +263,17 @@ input::placeholder{
     width: 100%;
     gap: 8px;
     grid-template-columns: 1fr;
-    grid-template-rows: 175px 100px 12rem 3rem 100vw 3rem 100vw 3rem 100vw 10rem;
-    /* 125px  */
-    
-    /* 125px  */
-    
-    /* 125px */
+    grid-template-rows: 175px 100px auto 3rem 100vw 3rem 100vw 3rem 100vw 10rem;
     grid-template-areas: 
     "he"
     "h1"
     "pd"
     "n1"
     "d1"
-    /* "c1" */
     "n2"
     "d2"
-    /* "c2" */
     "n3"
     "d3"
-    /* "c3" */
     "fo"
     ;
     
@@ -371,6 +363,7 @@ input::placeholder{
     align-items: center;
     background: rgb(75, 0, 130);
     color: white;
+    /* margin-bottom: 0px; */
 
 }
 
@@ -379,13 +372,7 @@ input::placeholder{
 }
 
 #contest1_details{
-    /* grid-area: c1; */
-    /* position: absolute; */
-    /* background: rebeccapurple;
-    margin-bottom: 100px; */
-    /* position: absolute; */
-    top: 1000px;
-
+    grid-area: c1;
 }
 
 #contest1_description{
@@ -436,6 +423,7 @@ input::placeholder{
 #page_description{
     background: white;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 10px;
@@ -447,13 +435,17 @@ input::placeholder{
     box-shadow: 0px 0px 10px rgb(196, 196, 196);
 }
 
+#page_description_header{
+    font-size: 1.5rem;
+}
+
 #wrapper_resultat{
     display: grid;
     height: 100%;
     width: 100%;
     gap: 8px;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 175px 100px 10rem 5rem 1fr 1fr 5rem 1fr 1fr 10rem;
+    grid-template-rows: 175px 100px auto 5rem 1fr 1fr 5rem 1fr 1fr 10rem;
     grid-template-areas: 
     "he he"
     "h1 h1"
@@ -477,12 +469,15 @@ input::placeholder{
     background: white;
     box-shadow: 0px 0px 10px rgb(196, 196, 196);
 }
+
 #contest_1_results{
     grid-area: r1;
+    padding: 40px;
 }
 
 #contest_2_results{
     grid-area: r2;
+    padding: 40px;
 }
 
 #result_movie_1{
@@ -763,7 +758,7 @@ p{
         width: 100%;
         gap: 8px;
         grid-template-columns: 0.75fr 1.75fr 0.40fr 0.75fr;
-        grid-template-rows: 175px 2rem 7rem 6rem auto 25rem 10rem 7rem 10rem;
+        grid-template-rows: 175px 2rem 7rem auto auto 25rem 10rem 7rem 10rem;
         grid-template-areas: 
         "he he he he"
         "na na na na"
@@ -824,7 +819,7 @@ p{
         width: 100%;
         gap: 8px;
         grid-template-columns: 1fr 8fr 8fr 1fr;
-        grid-template-rows: 175px 2rem 7rem minmax(10rem, auto) 6rem 40vw 6rem 40vw 6rem 40vw 10rem;
+        grid-template-rows: 175px 2rem 7rem auto 6rem 40vw 6rem 40vw 6rem 40vw 10rem;
         grid-template-areas: 
         "he he he he"
         "na na na na"
@@ -929,6 +924,8 @@ p{
         align-items: center;
         background: rgb(75, 0, 130);
         color: white;
+        padding: 40px;
+
     }
 
     .skicka_in_button{
@@ -961,13 +958,17 @@ p{
         box-shadow: 0px 0px 10px rgb(196, 196, 196);
     }
 
+    #page_description_header{
+        font-size: 2rem;
+    }    
+
     #wrapper_resultat{
         display: grid;
         height: 100%;
         width: 100%;
         gap: 8px;
         grid-template-columns: 1fr 2fr 2fr 1fr;
-        grid-template-rows: 175px 2rem 7rem minmax(8rem, auto) 100px 1fr 1fr 100px 1fr 1fr 10rem;
+        grid-template-rows: 175px 2rem 7rem auto 100px 1fr 1fr 100px 1fr 1fr 10rem;
         grid-template-areas: 
         "he he he he"
         "na na na na"

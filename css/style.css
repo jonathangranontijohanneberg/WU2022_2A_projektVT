@@ -452,14 +452,14 @@ input::placeholder{
     "pd"
     "r1"
     "m1"
-    "d1"
+    "da"
     "m2"
-    "d2"
+    "db"
     "r2"
     "m3"
-    "d3"
+    "dc"
     "m4"
-    "d4"
+    "dd"
     "fo"
 }
 
@@ -484,8 +484,9 @@ input::placeholder{
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
-
     background: white;
+
+    padding-bottom: 40px;
     box-shadow: 0px 0px 10px rgb(196, 196, 196);
 }
 
@@ -531,7 +532,7 @@ input::placeholder{
 }
 
 #result_description_1{
-    grid-area: d1;
+    grid-area: da;
 }
 
 
@@ -544,7 +545,7 @@ input::placeholder{
 }
 
 #result_description_2{
-    grid-area: d2;
+    grid-area: db;
 }
 
 
@@ -557,7 +558,7 @@ input::placeholder{
 }
 
 #result_description_3{
-    grid-area: d3;
+    grid-area: dc;
 }
 
 
@@ -570,7 +571,7 @@ input::placeholder{
 }
 
 #result_description_4{
-    grid-area: d4;
+    grid-area: dd;
 }
 
 .rank{
@@ -986,6 +987,7 @@ p{
         justify-content: center;
         align-items: flex-start;
         flex-direction: column;
+        padding-bottom: 0px;
     
         background: white;
         box-shadow: 0px 0px 10px rgb(196, 196, 196);
@@ -1025,11 +1027,11 @@ p{
         "h1 h1 h1 h1"
         "pd pd pd pd"
         ".  r1 r1 . "
-        ".  m1 d1 . "
-        ".  m2 d2 . "
+        ".  m1 da . "
+        ".  m2 db . "
         ".  r2 r2 . "
-        ".  d3 m3 . "
-        ".  d4 m4 . "
+        ".  dc m3 . "
+        ".  dd m4 . "
         "fo fo fo fo"
     }
 

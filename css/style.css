@@ -467,7 +467,6 @@ input::placeholder{
 
 .results_descriptions{
     display: flex;
-    /* flex-direction: row; */
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
@@ -972,6 +971,37 @@ p{
     #page_description_header{
         font-size: 2rem;
     }    
+
+    .results_descriptions{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+    
+        background: white;
+        box-shadow: 0px 0px 10px rgb(196, 196, 196);
+    }
+    
+    .results_descriptions_headers{
+        font-size: 1.5rem;
+        margin-right: 20px;
+    }
+    
+    .results_descriptions_headers_and_information{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: baseline;
+        box-shadow: 0px 0px 2px rgb(196, 196, 196);
+        padding-left: 30px;
+    
+        width: 100%;
+    }
+    
+    .results_descriptions_summaries{
+        display: flex;
+        flex-direction: column;
+    }
 
     #wrapper_resultat{
         display: grid;

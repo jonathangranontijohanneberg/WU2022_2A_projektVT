@@ -292,13 +292,17 @@ input::placeholder{
     /* margin-left: -93px; */
     font-weight: bold;
     margin-top: 10px;
+    /* justify-content: center;
+    align-items: center; */
+    /* height: 100000px; */
 }
 
 .skicka_in_button_mobile{
-    /* position: absolute; */
-    margin-left: 0px;
+    /* margin-left: 0px; */
     margin-top: 10px;
     z-index: 1;
+    /* height: 3rem; */
+    /* height: 100%; */
 }
 
 
@@ -306,7 +310,7 @@ input::placeholder{
     /* position: absolute; */
     margin-left: 0px;
     margin-top: 10px;
-    /* display: none; */
+    display: none;
 }
 
 
@@ -320,7 +324,9 @@ input::placeholder{
 .contest_descriptions{
     color: white;
     text-shadow: 1px 1px 5px rgb(19, 19, 19);
-    padding: 17vw;
+    padding-left: 17vw;
+    padding-right: 17vw;
+
     display: flex;
     flex-direction: column;
     font-size: 1.4rem;
@@ -886,6 +892,8 @@ p{
 
     .contest_descriptions{
         padding: 20px;
+        padding-left: none;
+        padding-right: none;    
 
         color: black;
         text-shadow: none;
@@ -951,7 +959,7 @@ p{
     .skicka_in_button{
 
         position: relative;
-    
+        display: block;
 
         margin-top: 2rem;
         margin-left: 0px;

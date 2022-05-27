@@ -243,19 +243,35 @@ button:hover{
 
 input{
     width: 70vw;
-    height: 7vw;
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+
 }
 
 input::placeholder{
-    font-size: 3.5vw;
+    /* font-size: 1.2rem; */
+    font-size: 4vw;
+
+    /* margin: 100px; */
 }
 
 .bli_medlem_sections{
     display: flex;
     flex-direction: column;
     padding: 10px;
+    /* font-size: 3rem; */
 
 }
+
+.bli_medlem_sections h2{
+    font-size: 1.3rem;
+}
+
+/* .bar{
+
+} */
 
 #wrapper_tavlingar{
     display: grid;
@@ -832,6 +848,9 @@ p{
         font-size: 1.6rem;
         width: 80%;
         height: 3rem;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        padding-right: 0px;
     }
 
     input::placeholder{
